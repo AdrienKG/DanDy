@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="adriengervais.dandy" >
+    package="com.dandy" >
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".activities.MainActivity"
+            android:name="com.dandy.activities.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,28 +17,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.CharacterCreation"
+            android:name="com.dandy.activities.CharacterCreation"
             android:label="@string/title_activity_character_creation"
-            android:parentActivityName=".activities.MainActivity" >
+            android:parentActivityName="com.dandy.activities.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.MainActivity" />
+                android:value="com.dandy.activities.MainActivity" />
         </activity>
         <activity
-            android:name=".activities.CharacterDetailListActivity"
+            android:name="com.dandy.activities.CharacterDetailListActivity"
             android:label="@string/title_characterdetail_list"
-            android:parentActivityName=".activities.MainActivity" >
+            android:parentActivityName="com.dandy.activities.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="adriengervais.dandy.activities.MainActivity" />
+                android:value="com.dandy.activities.MainActivity" />
         </activity>
         <activity
-            android:name=".activities.CharacterDetailDetailActivity"
+            android:name="com.dandy.activities.CharacterDetailDetailActivity"
             android:label="@string/title_characterdetail_detail"
-            android:parentActivityName=".activities.CharacterDetailListActivity" >
+            android:parentActivityName="com.dandy.activities.CharacterDetailListActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="adriengervais.dandy.activities.CharacterDetailListActivity" />
+                android:value="com.dandy.activities.CharacterDetailListActivity" />
         </activity>
     </application>
 
