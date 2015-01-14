@@ -1,0 +1,62 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/fcd_abilities_scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/fcd_abilities_ll_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="horizontal"
+
+        android:layout_gravity="center"
+        android:gravity="center">
+        <!--android:paddingEnd="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingStart="@dimen/activity_horizontal_margin"-->
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:id="@+id/fcd_abilities_ll_major">-->
+
+            <!--<include android:id="fcd_abilities_str" layout="@layout/component_abilities_major"/>-->
+
+            <!--<include android:id="fcd_abilities_con" layout="@layout/component_abilities_major"/>-->
+
+            <!--<include android:id="fcd_abilities_dex" layout="@layout/component_abilities_major"/>-->
+
+            <!--<include android:id="fcd_abilities_int" layout="@layout/component_abilities_major"/>-->
+
+            <!--<include android:id="fcd_abilities_wis" layout="@layout/component_abilities_major"/>-->
+
+            <!--<include android:id="fcd_abilities_cha" layout="@layout/component_abilities_major"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<Space-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp" />-->
+
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:id="@+id/fcd_abilities_ll_minor">-->
+
+            <!--<include android:id="fcd_abilities_ac" layout="@layout/component_abilities_minor"/>-->
+
+            <!--<include android:id="fcd_abilities_fort" layout="@layout/component_abilities_minor"/>-->
+
+            <!--<include android:id="fcd_abilities_ref" layout="@layout/component_abilities_minor"/>-->
+
+            <!--<include android:id="fcd_abilities_will" layout="@layout/component_abilities_minor"/>-->
+
+            <!--<include android:id="fcd_abilities_init" layout="@layout/component_abilities_minor"/>-->
+
+            <!--<include android:id="fcd_abilities_mov" layout="@layout/component_abilities_minor"/>-->
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+</ScrollView>

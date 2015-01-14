@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/component_horizontal_padding">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/temp_attacks_name"
+        android:id="@+id/alvr_name"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/temp_attacks_vs"
+        android:id="@+id/alvr_vs"
+        android:layout_below="@+id/alvr_name"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/temp_attacks_attack_label"
+        android:id="@+id/alvr_attack_label"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/component_horizontal_margin"
+        android:layout_marginRight="@dimen/component_horizontal_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/temp_attacks_damage_label"
+        android:id="@+id/alvr_damage_label"
+        android:layout_toStartOf="@id/alvr_attack_label"
+        android:layout_marginLeft="@dimen/component_horizontal_margin"
+        android:layout_marginRight="@dimen/component_horizontal_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/temp_attacks_attack_value"
+        android:id="@+id/alvr_attack_value"
+        android:layout_below="@+id/alvr_attack_label"
+        android:layout_alignLeft="@+id/alvr_attack_label"
+        android:layout_alignRight="@+id/alvr_attack_label"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/temp_attacks_damage_value"
+        android:id="@+id/alvr_damage_value"
+        android:layout_below="@+id/alvr_damage_label"
+        android:layout_alignRight="@+id/alvr_damage_label"
+        android:layout_alignLeft="@+id/alvr_damage_label"
+        android:gravity="center" />
+</RelativeLayout>

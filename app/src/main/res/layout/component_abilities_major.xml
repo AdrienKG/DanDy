@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp" android:layout_height="wrap_content"
+    android:id="@+id/abilities_major_layout"
+    android:background="@drawable/border"
+    android:padding="10dp"
+    android:layout_marginLeft="@dimen/component_horizontal_margin"
+    android:layout_marginRight="@dimen/component_horizontal_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/temp_abilities_major_type"
+        android:id="@+id/abilities_major_type"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/temp_abilities_major_value"
+        android:layout_alignParentStart="false"
+        android:id="@+id/abilities_major_value"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/abilities_major_type" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/temp_abilities_major_mod"
+        android:id="@+id/abilities_major_modifier"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/abilities_major_value" />
+</RelativeLayout>
