@@ -1,12 +1,31 @@
 <resources>
-    <style name="Label">
-        <item name="android:paddingTop">5dp</item>
+
+    <style name="fcdLabel">
+        <!--item name="android:paddingTop">5dp</item>
         <item name="android:paddingRight">5dp</item>
         <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item-->
     </style>
 
-    <style name="fcdLabel" parent="Label">
-        <item name="android:width">100dp</item>
-        <item name="android:gravity">center_vertical</item>
+    <style name="fcdDetailsField">
+        <!--item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:enabled">false</item>
+        <item name="android:gravity">center</item-->
+    </style>
+
+    <style name="fcdDetailsFullField" parent="fcdDetailsField">
+        <!--item name="android:layout_width">match_parent</item>
+        <item name="android:layout_span">3</item-->
+    </style>
+
+    <style name="fcdAbilitiesField" parent="fcdDetailsField">
+        <!--item name="android:layout_width">50dp</item>
+        <item name="android:inputType">number</item-->
     </style>
 </resources>

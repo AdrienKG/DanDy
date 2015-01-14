@@ -1,11 +1,13 @@
 package com.dandy.activities;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.dandy.R;
+import com.dandy.activities.dummy.DetailsListContent;
 import com.dandy.activities.fragments.CharacterDetailDetailFragment;
 
 /**
@@ -78,7 +80,7 @@ public class CharacterDetailListActivity extends Activity implements CharacterDe
             // fragment transaction.
             Bundle arguments = new Bundle();
             arguments.putString(CharacterDetailDetailFragment.ARG_ITEM_ID, id);
-            CharacterDetailDetailFragment fragment = new CharacterDetailDetailFragment();
+            Fragment fragment = DetailsListContent.ITEM_MAP.get(id).fragment;
             fragment.setArguments(arguments);
             getFragmentManager().beginTransaction().replace(R.id.characterdetail_detail_container, fragment).commit();
 

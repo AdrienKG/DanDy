@@ -27,4 +27,22 @@
     <string name="title_activity_character_creation">CharacterCreation</string>
     <string name="hello_world">Hello world!</string>
 
+    <string name="temp_amlvr_name">Name</string>
+    <string name="temp_amlvr_race">Race</string>
+    <string name="temp_amlvr_class">Class</string>
+    <string name="temp_amlvr_level">Level</string>
+
+    <string name="temp_abilities_major_type">STR</string>
+    <string name="temp_abilities_minor_type">AC</string>
+    <string name="temp_abilities_major_value">14</string>
+    <string name="temp_abilities_major_mod">2</string>
+    <string name="temp_abilities_minor_value">19</string>
+
+    <string name="temp_attacks_name">Name</string>
+    <string name="temp_attacks_vs">Type1 vs Type2</string>
+    <string name="temp_attacks_attack_label">Attack</string>
+    <string name="temp_attacks_damage_label">Damage</string>
+    <string name="temp_attacks_attack_value">8</string>
+    <string name="temp_attacks_damage_value">1</string>
+
 </resources>

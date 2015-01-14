@@ -1,5 +1,10 @@
 package com.dandy.activities.dummy;
 
+import android.app.Fragment;
+
+import com.dandy.activities.fragments.CharacterDetailDetailFragment;
+import com.dandy.activities.fragments.CharacterDetailInfoFragment;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -18,16 +23,16 @@ public class DetailsListContent {
 
     static {
         // Add 3 sample items.
-        addItem(new DetailsListItem("Details", "Details"));
-        addItem(new DetailsListItem("Abilities", "Abilities"));
-        addItem(new DetailsListItem("Attacks", "Attacks"));
-        addItem(new DetailsListItem("Health", "Health"));
-        addItem(new DetailsListItem("Powers", "Powers"));
-        addItem(new DetailsListItem("Skills", "Skills"));
-        addItem(new DetailsListItem("Feats", "Feats"));
-        addItem(new DetailsListItem("Items", "Items"));
-        addItem(new DetailsListItem("Rituals", "Rituals"));
-        addItem(new DetailsListItem("Notes", "Notes"));
+        addItem(new DetailsListItem("Details", new CharacterDetailDetailFragment()));
+        addItem(new DetailsListItem("Abilities", new CharacterDetailInfoFragment()));
+//        addItem(new DetailsListItem("Attacks", "Attacks"));
+//        addItem(new DetailsListItem("Health", "Health"));
+//        addItem(new DetailsListItem("Powers", "Powers"));
+//        addItem(new DetailsListItem("Skills", "Skills"));
+//        addItem(new DetailsListItem("Feats", "Feats"));
+//        addItem(new DetailsListItem("Items", "Items"));
+//        addItem(new DetailsListItem("Rituals", "Rituals"));
+//        addItem(new DetailsListItem("Notes", "Notes"));
     }
 
     private static void addItem(DetailsListItem item) {
@@ -40,16 +45,16 @@ public class DetailsListContent {
      */
     public static class DetailsListItem {
         public final String id;
-        public final String content;
+        public final Fragment fragment;
 
-        public DetailsListItem(final String id, final String content) {
+        public DetailsListItem(final String id, final Fragment fragment) {
             this.id = id;
-            this.content = content;
+            this.fragment = fragment;
         }
 
         @Override
         public String toString() {
-            return content;
+            return id;
         }
     }
 }

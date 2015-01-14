@@ -46,13 +46,6 @@ public class CharacterDetailDetailFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_characterdetail_detail, container, false);
-
-        // Show the dummy content as text in a TextView.
-//        if (mItem != null) {
-//            ((TextView) rootView.findViewById(R.id.characterdetail_detail)).setText(mItem.content);
-//        }
-
-        return rootView;
+        return inflater.inflate(R.layout.fragment_characterdetail_detail, container, false);
     }
 }

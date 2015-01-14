@@ -1,11 +1,178 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/fcd_scroll_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+<ScrollView
+    android:id="@+id/fcd_details_scroll_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <FrameLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/fcd_frame">
-    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/fcd_details_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:shrinkColumns="1,3">
+
+            <TextView
+                android:id="@+id/fcd_details_name_label"
+                style="@style/fcdLabel"
+                android:labelFor="@+id/fcd_details_name_field"
+                android:text="@string/name_label"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignTop="@id/fcd_details_name_field"
+                android:layout_alignBottom="@id/fcd_details_name_field"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/fcd_details_name_field"
+                style="@style/fcdDetailsFullField"
+                android:inputType="textPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/fcd_details_name_label"
+                android:layout_alignParentEnd="true" />
+
+        <TextView
+                android:id="@+id/fcd_details_race_label"
+                style="@style/fcdLabel"
+                android:labelFor="@+id/fcd_details_race_field"
+                android:text="@string/race_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fcd_details_name_label"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignBottom="@id/fcd_details_race_field"/>
+
+            <EditText
+                android:id="@+id/fcd_details_race_field"
+                style="@style/fcdDetailsFullField"
+                android:inputType="textCapWords"
+                android:layout_toEndOf="@id/fcd_details_race_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/fcd_details_name_label"
+                android:layout_alignTop="@+id/fcd_details_race_label" />
+         <TextView
+                android:id="@+id/fcd_details_class_label"
+                style="@style/fcdLabel"
+                android:labelFor="@+id/fcd_details_class_field"
+                android:text="@string/class_label"/>
+
+            <EditText
+                android:id="@+id/fcd_details_class_field"
+                style="@style/fcdDetailsFullField"
+                android:inputType="textCapWords"/>
+        <TextView
+                android:id="@+id/fcd_details_level_label"
+                style="@style/fcdLabel"
+                android:labelFor="@+id/fcd_details_level_field"
+                android:text="@string/level_label"/>
+
+            <EditText
+                android:id="@+id/fcd_details_level_field"
+                style="@style/fcdDetailsField"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/fcd_details_experience_label"
+                style="@style/fcdLabel"
+                android:labelFor="@+id/fcd_details_experience_field"
+                android:paddingLeft="5dp"
+                android:text="@string/experience_label"/>
+
+            <EditText
+                android:id="@+id/fcd_details_experience_field"
+                style="@style/fcdDetailsField"
+                android:inputType="number"/>
+        <TextView
+                android:id="@+id/fcd_details_paragon_label"
+                style="@style/fcdLabel"
+                android:labelFor="@+id/fcd_details_paragon_field"
+                android:text="@string/paragon_label"/>
+
+            <EditText
+                android:id="@+id/fcd_details_paragon_field"
+                style="@style/fcdDetailsFullField"
+                android:inputType="textCapWords"/>
+        <TextView
+                android:id="@+id/fcd_details_epic_label"
+                style="@style/fcdLabel"
+                android:labelFor="@+id/fcd_details_epic_field"
+                android:text="@string/epic_label"/>
+
+            <EditText
+                android:id="@+id/fcd_details_epic_field"
+                style="@style/fcdDetailsFullField"
+                android:inputType="textCapWords"/>
+        <TextView
+                android:id="@+id/fcd_details_deity_label"
+                style="@style/fcdLabel"
+                android:labelFor="@+id/fcd_details_deity_field"
+                android:text="@string/deity_label"/>
+
+            <EditText
+                android:id="@+id/fcd_details_deity_field"
+                style="@style/fcdDetailsFullField"
+                android:inputType="textCapWords"/>
+        <TextView
+                android:id="@+id/fcd_details_weight_label"
+                style="@style/fcdLabel"
+                android:labelFor="@+id/fcd_details_weight_field"
+                android:text="@string/weight_label"/>
+
+            <EditText
+                android:id="@+id/fcd_details_weight_field"
+                style="@style/fcdDetailsField"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/fcd_details_height_label"
+                style="@style/fcdLabel"
+                android:labelFor="@+id/fcd_details_height_field"
+                android:paddingLeft="5dp"
+                android:text="@string/height_label"/>
+
+            <EditText
+                android:id="@+id/fcd_details_height_field"
+                style="@style/fcdDetailsField"
+                android:inputType="number"/>
+        <TextView
+                android:id="@+id/fcd_details_size_label"
+                style="@style/fcdLabel"
+                android:labelFor="@+id/fcd_details_size_field"
+                android:text="@string/size_label"/>
+
+            <EditText
+                android:id="@+id/fcd_details_size_field"
+                style="@style/fcdDetailsField"
+                android:inputType="textCapWords"/>
+
+            <TextView
+                android:id="@+id/fcd_details_vision_label"
+                style="@style/fcdLabel"
+                android:labelFor="@+id/fcd_details_vision_field"
+                android:paddingLeft="5dp"
+                android:text="@string/vision_label"/>
+
+            <EditText
+                android:id="@+id/fcd_details_vision_field"
+                style="@style/fcdDetailsField"
+                android:inputType="textCapWords"/>
+        <TextView
+                android:id="@+id/fcd_details_misc_label"
+                style="@style/fcdLabel"
+                android:labelFor="@+id/fcd_details_misc_field"
+                android:text="@string/misc_label"/>
+
+            <EditText
+                android:id="@+id/fcd_details_misc_field"
+                style="@style/fcdDetailsFullField"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="6"/>
+    </RelativeLayout>
 </ScrollView>
