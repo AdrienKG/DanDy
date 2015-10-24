@@ -1,10 +1,14 @@
 <resources>
 
-    <style name="fcdLabel">
+    <style name="fcdComponent">
+
+    </style>
+
+    <style name="fcdLabel" parent="fcdComponent">
         <item name="android:paddingTop">5dp</item>
         <item name="android:paddingRight">5dp</item>
         <item name="android:paddingBottom">5dp</item>
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">95dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
@@ -14,22 +18,41 @@
         <item name="android:paddingLeft">5dp</item>
     </style>
 
-    <style name="fcdDetailsField">
-        <!--item name="android:layout_height">match_parent</item>
+    <style name="fcdLabelSmall" parent="fcdLabel">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="fcdField" parent="fcdComponent">
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:ems">10</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
         <item name="android:enabled">false</item>
-        <item name="android:gravity">center</item-->
+        <!--<item name="android:elevation">@dimen/elevation</item>-->
+        <item name="android:textColor">#ff000000</item>
+    </style>
+
+    <style name="fcdDetailsField" parent="fcdField">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="fcdAbilitiesMinorField" parent="fcdField">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
     </style>
 
     <style name="fcdDetailsFullField" parent="fcdDetailsField">
-        <!--item name="android:layout_width">match_parent</item>
-        <item name="android:layout_span">3</item-->
+        <item name="android:layout_width">match_parent</item>
     </style>
 
-    <style name="fcdAbilitiesField" parent="fcdDetailsField">
-        <!--item name="android:layout_width">50dp</item>
-        <item name="android:inputType">number</item-->
+    <style name="fcdAbilitiesIncludes">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/component_horizontal_margin</item>
     </style>
 </resources>

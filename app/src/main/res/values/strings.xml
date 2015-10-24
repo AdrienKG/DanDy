@@ -9,23 +9,51 @@
     <string name="title_character_list">Characters</string>
     <string name="title_character_detail">Character Detail</string>
     <string name="title_activity_activity_character_creation">ActivityCharacterCreation</string>
+    <string name="title_activity_character_creation">CharacterCreation</string>
+
     <string name="title_characterdetail_list">CharacterDetails</string>
     <string name="title_characterdetail_detail">CharacterDetail Detail</string>
-    <string name="name_label">Name:</string>
-    <string name="race_label">Race:</string>
-    <string name="class_label">Class:</string>
-    <string name="level_label">Level:</string>
-    <string name="experience_label">XP:</string>
-    <string name="paragon_label">Paragon:</string>
-    <string name="epic_label">Epic:</string>
-    <string name="weight_label">Weight:</string>
-    <string name="height_label">Height:</string>
-    <string name="size_label">Size:</string>
-    <string name="vision_label">Vision:</string>
-    <string name="deity_label">Deity:</string>
-    <string name="misc_label">Misc:</string>
-    <string name="title_activity_character_creation">CharacterCreation</string>
-    <string name="hello_world">Hello world!</string>
+
+    <string name="label_name">Name:</string>
+    <string name="label_race">Race:</string>
+    <string name="label_class">Class:</string>
+    <string name="label_level">Level:</string>
+    <string name="label_experience">XP:</string>
+    <string name="label_paragon">Paragon:</string>
+    <string name="label_epic">Epic:</string>
+    <string name="label_weight">Weight:</string>
+    <string name="label_height">Height:</string>
+    <string name="label_size">Size:</string>
+    <string name="label_vision">Vision:</string>
+    <string name="label_deity">Deity:</string>
+    <string name="label_misc">Misc:</string>
+
+    <string name="label_abilities_major_str">STR</string>
+    <string name="label_abilities_major_con">CON</string>
+    <string name="label_abilities_major_dex">DEX</string>
+    <string name="label_abilities_major_int">INT</string>
+    <string name="label_abilities_major_wis">WIS</string>
+    <string name="label_abilities_major_cha">CHA</string>
+
+    <string name="label_abilities_minor_ac">AC</string>
+    <string name="label_abilities_minor_fort">FORT</string>
+    <string name="label_abilities_minor_ref">REF</string>
+    <string name="label_abilities_minor_will">WILL</string>
+    <string name="label_abilities_minor_init">INIT</string>
+    <string name="label_abilities_minor_mov">MOV</string>
+
+    <string name="label_mod">Mod:</string>
+
+    <string name="label_abilities_minor_sub_level">Lvl/2:</string>
+    <string name="label_abilities_minor_sub_armor">Armr:</string>
+    <string name="label_abilities_minor_sub_ability">Ablt:</string>
+    <string name="label_abilities_minor_sub_class">Cls:</string>
+    <string name="label_abilities_minor_sub_feat">Feat:</string>
+    <string name="label_abilities_minor_sub_enh">Enh:</string>
+    <string name="label_abilities_minor_sub_misc">Misc:</string>
+
+    <string name="label_hp">HP:</string>
+    <string name="label_surges">Surges:</string>
 
     <string name="temp_amlvr_name">Name</string>
     <string name="temp_amlvr_race">Race</string>
@@ -33,10 +61,17 @@
     <string name="temp_amlvr_level">Level</string>
 
     <string name="temp_abilities_major_type">STR</string>
-    <string name="temp_abilities_minor_type">AC</string>
     <string name="temp_abilities_major_value">14</string>
-    <string name="temp_abilities_major_mod">2</string>
+    <string name="temp_abilities_major_mod_value">Mod: 2</string>
+
     <string name="temp_abilities_minor_value">19</string>
+    <string name="temp_abilities_minor_sub_level_value">5</string>
+    <string name="temp_abilities_minor_sub_armor_value">1</string>
+    <string name="temp_abilities_minor_sub_ability_value">3</string>
+    <string name="temp_abilities_minor_sub_class_value">0</string>
+    <string name="temp_abilities_minor_sub_feat_value">1</string>
+    <string name="temp_abilities_minor_sub_enh_value">1</string>
+    <string name="temp_abilities_minor_sub_misc_value">0</string>
 
     <string name="temp_attacks_name">Name</string>
     <string name="temp_attacks_vs">Type1 vs Type2</string>
@@ -44,5 +79,10 @@
     <string name="temp_attacks_damage_label">Damage</string>
     <string name="temp_attacks_attack_value">8</string>
     <string name="temp_attacks_damage_value">1</string>
+
+    <string name="temp_health_hp">35 (64)</string>
+    <string name="temp_health_temp_hp">3</string>
+    <string name="temp_health_surges_amount">8 (9)</string>
+    <string name="temp_health_surges_value">7</string>
 
 </resources>
