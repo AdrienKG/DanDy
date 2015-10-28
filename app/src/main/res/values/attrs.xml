@@ -2,7 +2,19 @@
 
     <style name="amlvr_small_text">
         <item name="android:layout_marginRight">10dp</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Small</item>
         <item name="android:layout_below">@id/amlvr_name</item>
+    </style>
+
+    <style name="acc_label">
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="acc_field">
+        <item name="android:ems">10</item>
+        <item name="android:layout_alignParentEnd">true</item>
     </style>
 </resources>
