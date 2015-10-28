@@ -17,4 +17,12 @@
         <item name="android:ems">10</item>
         <item name="android:layout_alignParentEnd">true</item>
     </style>
+
+    <style name="fcdd_label">
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+    </style>
+
+    <style name="fcdd_field">
+        <item name="android:layout_gravity">left|right</item>
+    </style>
 </resources>
